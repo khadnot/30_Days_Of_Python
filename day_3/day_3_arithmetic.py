@@ -72,3 +72,19 @@ print('3 is odd because 3 % 2 != 0')
 print(odd_num % 2 == 0)
 
 # 18. Check if the floor division of 7 by 3 == int value of 2.7
+floor_div = 7 // 3
+print(floor_div == int(2.7))
+
+# 19. Check if '10' is equal to type 10
+print('10' == 10)
+
+# 20. Check if int('9.8') == 10
+# print(int('9.8') == 10) // invalid 9.8 is a float not an int
+
+# 21. Write a script that prompts the user to enter hours and rate per hour. Calculate pay per hour.
+def pay_per_hour():
+    hours = int(input("Enter hours: "))
+    rate = float(input("Enter rate per hour: "))
+    return hours * rate
+
+print('Your weekly earnings is', pay_per_hour())
