@@ -87,4 +87,23 @@ def pay_per_hour():
     rate = float(input("Enter rate per hour: "))
     return hours * rate
 
-print('Your weekly earnings is', pay_per_hour())
+print('Your weekly amount earned is', pay_per_hour())
+
+# 22. Write a script that prompts the user to enter number of years.
+# Calculate the number of seconds a person can live.
+# Assume a person can live for 100 years
+def seconds_lived():
+    years = int(input("Enter number of years you have lived: "))
+    return years * 365 * 24 * 60 * 60
+
+print('You have lived for', seconds_lived(), 'seconds.')
+
+# 23. Write a script that displays the following table
+# 1 1 1 1 1
+# 2 1 2 4 8
+# 3 1 3 9 27
+# 4 1 4 16 64
+# 5 1 5 25 125
+
+for i in range(1, 6):
+    print(i, 1, i, i**2, i**3)
